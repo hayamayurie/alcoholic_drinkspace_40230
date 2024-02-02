@@ -1,0 +1,66 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 1366px;
+  padding: 10px 60px 10px 40px;
+}
+
+.title-tag {
+  font-size: 40px;
+  font-family: Georgia;
+  color: slategray;
+}
+
+.lists-right {
+  list-style: none;
+}
+
+.user-nickname {
+  text-decoration-line: none;
+  text-decoration: none;
+}
+
+.logout {
+  text-decoration-line: none;
+}
+.imag {
+  display: flex;
+  position: relative;
+  width: 1366px;
+  height: 100%;
+}
+.image-main {
+  height: 100%;
+  width: 100%;
+}
+
+.alcohol-items {
+  position: absolute;
+  top: calc(50% - 35px);
+  padding: 0 60px;
+}
+
+.alcohol-text__main {
+font-size: 55px;
+}
+
+.hero-text__sub {
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-btn {
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Georgia;
+  padding: 10px;
+  margin: 30px 230px;
+  background-color: whitesmoke;
+}
+
+.start-btn {
+  text-decoration: none;
+  color: black;
+}
+
