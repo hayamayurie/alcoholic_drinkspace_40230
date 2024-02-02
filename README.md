@@ -1,24 +1,39 @@
 # README
+#　テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                       |
+| ------------------ | ------ | ----------------------------- |
+| email              | string | null: false, uniqueness: true |
+| encrypted_password | string | null: false                   |
+| nickname           | string | null: false                   |
 
-* Ruby version
+### Association
+has_many :alcohols
+has_many :comments
 
-* System dependencies
+## alcohols テーブル
 
-* Configuration
+| Column         | Type       | Options                        |
+| -------------- | ---------- | ------------------------------ |
+| alcohol-name   | string     | null: false                    |
+| memo           | text       | null: false                    |
+| condition_id   | integer    | null: false                    |
+| user           | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
+belong_to :user
+has_many :comments
 
-* Database initialization
+## comments テーブル
 
-* How to run the test suite
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| text       | text       | null: false                    |
+| tweet      | references | null: false, foreign_key: true |
+| user       | references | null: false, foreign_key: true |
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+belong_to :alcohol
+belong_to :user
