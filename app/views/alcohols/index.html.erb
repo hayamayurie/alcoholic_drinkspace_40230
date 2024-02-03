@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>お酒の記録</title>
+    <link rel="stylesheet" href="alcohols.css">
+  </head>
+<body>
+  <header>
+    <div class ="title">
+      <div class ="title-tag">alcohol record space</div>
+      <div class='nav'>
+    <ul class='lists-right'>
+    <%# if user_signed_in? %>
+      <li><%= link_to "ユーザー名", "#", class: "user-nickname" %></li>
+      <%# else %>
+      <li><%# link_to 'ログアウト', "#", data: {turbo_method: :delete}, class: "logout" %></li>
+       <%# end %>
+   </ul>
+  </div>
+    </header>
+    <main>
+    <div class= "image">
+         <img src="/assets/main01.jpg" class="image-main">
+         <div class="alcohol-items">
+          <div class="alcohol-text">
+            <div class="alcohol-text__main">出会ったお酒を記録しよう</div>
+            <div class="hero-text__sub">〜美味しいお酒との出会いを忘れない様に〜</div>
+          </div>
+          <div class="service-btn">
+            <%= link_to 'Start', "#", class: "start-btn" %>
+        </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+
+
