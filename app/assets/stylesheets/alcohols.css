@@ -18,6 +18,7 @@
 .user-nickname {
   text-decoration-line: none;
   text-decoration: none;
+  color: black;
 }
 
 .logout {
@@ -41,7 +42,7 @@
 }
 
 .alcohol-text__main {
-font-size: 55px;
+font-size: 50px;
 }
 
 .hero-text__sub {

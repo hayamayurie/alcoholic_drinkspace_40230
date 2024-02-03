@@ -50,6 +50,8 @@ test:
 #
 production:
   <<: *default
+   adapter: mysql2
   database: alcoholic_drinkspace_40230_production
-  username: alcoholic_drinkspace_40230
-  password: <%= ENV["ALCOHOLIC_DRINKSPACE_40230_DATABASE_PASSWORD"] %>
+  username: root
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  socket: /var/lib/mysql/mysql.sock
