@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 1366px;
-  padding: 10px 60px 10px 40px;
+  padding: 20px 60px;
   background-color: #f6efdb
 }
 
@@ -20,14 +20,16 @@
 .user-nickname {
   text-decoration-line: none;
   text-decoration: none;
-  color: black;
+  color: slategray;
+  ;
 }
 
 .logout {
   padding: 0 20px;
   text-decoration-line: none;
   text-decoration: none;
-  color: black;
+  color: slategray;
+  ;
 }
 .imag {
   display: flex;
