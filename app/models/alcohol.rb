@@ -1,10 +1,3 @@
 class Alcohol < ApplicationRecord
-
-def index
-end
-
-def new
-  @alcohol =Alcohol.new
-end
-
+  belongs_to_active_hash :category
 end
