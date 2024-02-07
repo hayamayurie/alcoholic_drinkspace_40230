@@ -10,8 +10,8 @@
   <% end %>
    </div>
    <div>銘柄</div>
-   <%= f.text_area :hoge, class:"alcohols-text", id:"alcohols-name", placeholder:"銘柄名（必須 40文字まで)", maxlength:"40" %>
+   <%= f.text_area :alcohol_name, class:"alcohols-text", id:"alcohols-name", placeholder:"銘柄名（必須 40文字まで)", maxlength:"40" %>
    <div>特徴</div>
-   <%= f.text_area :explanation, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
+   <%= f.text_area :memo, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
   <%= f.submit "登録" ,class:"sell-btn" %>
 <% end %>
