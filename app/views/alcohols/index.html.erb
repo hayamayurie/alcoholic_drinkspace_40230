@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>お酒の記録</title>
-     <%= stylesheet_link_tag 'alcohols', media: 'all' %>
   </head>
 <body>
   <header>
@@ -19,21 +18,4 @@
   </div>
   </div>
     </header>
-    <main>
-    <div class= "image">
-         <%= image_tag "main01.jpeg", class: "image-main" %> 
-         <div class="alcohol-items">
-          <div class="alcohol-text">
-            <div class="alcohol-text__main">出会ったお酒を記録しよう</div>
-            <div class="hero-text__sub">〜美味しいお酒との出会いを忘れない様に〜</div>
-          </div>
-          <div class="service-btn">
-            <%= link_to 'Start', new_user_session_path, class: "start-btn" %>
-        </div>
-    </main>
-    <footer></footer>
-  </body>
-</html>
-
-
-
+    
