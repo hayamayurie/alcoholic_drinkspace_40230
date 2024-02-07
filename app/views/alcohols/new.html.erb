@@ -2,12 +2,13 @@
 <%= form_with(model: @alcohol, local: true) do |f| %>
   <div>画像の投稿</div>
     <%= f.file_field :hoge, id:"item-image" %>
-   <div>種類</div>
-  <%= f.label :category_id, '種類' %>
+    <div>
+  <%= f.label :category_id, 'お酒の種類'%>
   <% @categories.each do |category| %>
-    <%= f.check_box :category_id, { multiple: true }, category.id, nil %>
-    <%= f.label category.category %>
-   <% end %>
+  <%= f.radio_button :category_id, category.id %>
+    <%= f.label "alcohol_category_#{category.id}", category.category %>
+  <% end %>
+   </div>
    <div>銘柄</div>
    <%= f.text_area :hoge, class:"alcohols-text", id:"alcohols-name", placeholder:"銘柄名（必須 40文字まで)", maxlength:"40" %>
    <div>特徴</div>
