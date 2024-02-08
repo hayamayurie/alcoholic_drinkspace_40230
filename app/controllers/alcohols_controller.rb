@@ -15,7 +15,7 @@ class AlcoholsController < ApplicationController
 
   private
   def alcohol_params
-    params.require(:alcohol).permit(:alcohol_name, :memo, :category_id ).merge(user_id: current_user.id)
+    params.require(:alcohol).permit(:alcohol_name, :memo, :category_id, :image).merge(user_id: current_user.id)
   end
 
   def set_categories

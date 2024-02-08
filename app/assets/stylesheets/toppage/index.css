@@ -20,9 +20,10 @@
 .post {
   margin: 20px 30px;
   padding: 10px 30px;
-  border: solid 2px;
+  border: solid 1px;
   font-size: 30px;
   text-decoration: none;
+  background-color: mintcream;
   color: slategray;
   border-radius: 10px;
   font-family: Georgia;
