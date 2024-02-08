@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   width: 1366px;
-  padding: 20px 60px;
+  height: 60px;
+  padding: 20px 60px 15px 60px;
   background-color: #f6efdb
 }
 
@@ -16,12 +17,20 @@
   display: flex;
   list-style: none;
 }
-
-.user-nickname {
-  text-decoration-line: none;
+.post {
+  margin: 20px 30px;
+  padding: 10px 30px;
+  border: solid 2px;
+  font-size: 30px;
   text-decoration: none;
   color: slategray;
-  ;
+  border-radius: 10px;
+  font-family: Georgia;
+}
+
+.user-nickname {
+  text-decoration: none;
+  color: slategray;
 }
 
 .logout {
