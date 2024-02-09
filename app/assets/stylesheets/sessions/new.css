@@ -1,0 +1,29 @@
+.login_page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login {
+  margin: 50px 0 20px;
+  color: slategrey;
+}
+
+.field {
+  font-size: 20px;
+  margin: 10px;
+  color: slategray;
+}
+
+.sing_up {
+  text-decoration: none;
+  color: maroon;
+  margin-top: 30px;
+  font-weight: bold; 
+}
+
+.passwords {
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+}
