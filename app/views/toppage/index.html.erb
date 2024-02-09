@@ -8,14 +8,6 @@
   <header>
     <div class ="title">
       <div class ="title-tag">alcohol record space</div>
-      <div class='nav'>
-    <ul class='lists-right'>
-    <% if user_signed_in? %>
-      <li><%= link_to  current_user.nickname, class: "user-nickname" %></li>
-      <li><%= link_to 'ログアウト', "#", data: {turbo_method: :delete}, class: "logout" %></li>
-    <% end %>
-   </ul>
-  </div>
   </div>
     </header>
     <main>

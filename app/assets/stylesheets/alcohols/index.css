@@ -30,7 +30,6 @@
   width: 300px; /* 商品ボックスの幅 */
   margin: 20px 10px; /* 商品ボックスのマージン */
   padding: 10px; /* 商品ボックスのパディング */
-  border: 1px solid #ccc; /* 商品ボックスのボーダー */
 }
 
 .item-img-content {
