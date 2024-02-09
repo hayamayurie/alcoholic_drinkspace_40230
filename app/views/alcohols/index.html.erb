@@ -10,12 +10,36 @@
       <div class ="title-tag">alcohol record space</div>
       <div class='nav'>
     <ul class='lists-right'>
-    <% if user_signed_in? %>
       <li><%= link_to  current_user.nickname, class: "user-nickname" %></li>
       <li><%= link_to 'ログアウト', "#", data: {turbo_method: :delete}, class: "logout" %></li>
-    <% end %>
+      <li><%= link_to  "Post", new_alcohol_path, class: "post" %></li>
    </ul>
   </div>
   </div>
     </header>
-    
+    <body>
+      <div class="main">
+      <div class="side_bar">
+        <div class="wapper">ビール</div>
+        <div class="wapper">ワイン</div>
+        <div class="wapper">日本酒</div>
+        <div class="wapper">ウイスキー</div>
+        <div class="wapper">焼酎</div>
+        <div class="wapper">カクテル</div>
+        </div>
+        <div class ="list">
+       <% @alcohols.each do |alcohol| %>
+        <div class="product">
+           <%= link_to '#' do %>
+        <div class='item-img-content'>
+          <%= image_tag alcohol.image.variant(resize: '300x250'), class: "message-image" if alcohol.image.attached? %></div>
+          <div class='item-name'>
+            <%=alcohol.alcohol_name %>
+            </div>
+            <% end %>
+            </div>
+            <%end%>
+       </div>
+        </div>
+      </div>
+      </body>

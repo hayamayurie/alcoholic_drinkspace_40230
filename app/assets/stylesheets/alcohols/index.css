@@ -1,0 +1,46 @@
+.side_bar {
+  height: 1000px;
+  width: 250px;
+  background-color: antiquewhite;
+  color: slategray;
+}
+
+.wapper {
+  font-size: 20px;
+  padding: 30px 50px;
+}
+
+.main {
+  display: flex;
+}
+
+.main_bar{
+  height: 100vh;
+  width: 1250px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.product {
+  height: 300px;
+  width: 300px; /* 商品ボックスの幅 */
+  margin: 20px 10px; /* 商品ボックスのマージン */
+  padding: 10px; /* 商品ボックスのパディング */
+  border: 1px solid #ccc; /* 商品ボックスのボーダー */
+}
+
+.item-img-content {
+  background-color: #FFFFFF;
+  text-align: center;
+  height: 250px;
+}
+
+.item-name {
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
