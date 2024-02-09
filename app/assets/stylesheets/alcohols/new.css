@@ -1,0 +1,31 @@
+.new_btn {
+  height: 600px;
+  display: flex;
+  text-align: center;
+  margin: 0 500px; 
+  color: slategrey;
+}
+
+.post_title_category{
+margin: 50px 0 10px 0;
+font-size: 20px;
+font-weight: bold; 
+}
+
+.post_title {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+.sell-btn {
+  margin-top: 20px;
+  padding:15px 80px;
+  background-color: bisque;
+  border: none;
+  border-radius: 10px;
+}
+
+.image_title {
+  padding-left: 110px;
+}

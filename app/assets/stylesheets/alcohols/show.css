@@ -1,6 +1,6 @@
 .show_info {
   width: 1350px;
-  height: 100vh;
+  height: 1050px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -29,7 +29,7 @@
 .show_btn {
   display: flex;
   text-align: center;
-  margin: 30px 470px;
+  margin: 40px 470px;
   font-size: 15px;
   white-space: nowrap;
 }
@@ -50,4 +50,7 @@
 .link-class {
   text-decoration: none !important;
   color: black;
+}
+
+.image_title {
 }
