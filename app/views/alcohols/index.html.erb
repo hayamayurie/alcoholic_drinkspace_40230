@@ -30,7 +30,7 @@
         <div class ="list">
        <% @alcohols.each do |alcohol| %>
         <div class="product">
-           <%= link_to '#' do %>
+           <%= link_to alcohol_path(alcohol) do %>
         <div class='item-img-content'>
           <%= image_tag alcohol.image.variant(resize: '300x250'), class: "message-image" if alcohol.image.attached? %></div>
           <div class='item-name'>

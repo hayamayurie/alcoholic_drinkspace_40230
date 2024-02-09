@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "toppage#index"
-  resources :alcohols, only: [:index,:new, :create]
+  resources :alcohols, only: [:index,:new, :create, :show]
 end
