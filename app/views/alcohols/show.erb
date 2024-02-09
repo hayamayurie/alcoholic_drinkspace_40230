@@ -28,7 +28,7 @@
           <div class ="edit">
           <%= link_to  "編集", edit_alcohol_path(@alcohol), class: "link-class" %></div>
           <div class="destory">
-          <%= link_to  "削除", class: "link-class" %></div>
+          <%= link_to  "削除", alcohol_path(@alcohol), data: {turbo_method: :delete}, class: "link-class" %></div>
           </div>
           </div>
         
