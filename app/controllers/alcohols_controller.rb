@@ -1,5 +1,5 @@
 class AlcoholsController < ApplicationController
-  before_action :set_categories, only: [:new,]
+  before_action :set_categories, only: [:new,:edit]
   
   def index
     @alcohols=Alcohol.all
@@ -10,7 +10,8 @@ class AlcoholsController < ApplicationController
   end
 
   def create
-    if @alcohol=Alcohol.create(alcohol_params)
+    @alcohol=Alcohol.create(alcohol_params)
+    if @alcohol.save
       redirect_to alcohols_path
     else
       render :new, status: :unprocessable_entity
@@ -22,8 +23,10 @@ class AlcoholsController < ApplicationController
   end
 
   def edit
-    alcohol=Alcohol.find(params[:id])
+    @alcohol=Alcohol.find(params[:id])
   end
+
+  
 
   private
   def alcohol_params
