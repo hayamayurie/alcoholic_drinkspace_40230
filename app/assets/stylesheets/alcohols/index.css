@@ -1,7 +1,7 @@
 .side_bar {
   height: 1000px;
   width: 250px;
-  background-color: antiquewhite;
+  background-color: #f6efdb;
   color: slategray;
 }
 
@@ -30,10 +30,12 @@
   width: 300px; /* 商品ボックスの幅 */
   margin: 20px 10px; /* 商品ボックスのマージン */
   padding: 10px; /* 商品ボックスのパディング */
+  background-color: whitesmoke;
+  border-radius: 10px;
 }
 
 .item-img-content {
-  background-color: #FFFFFF;
+  background-color: whitesmoke;
   text-align: center;
   height: 250px;
 }
@@ -42,4 +44,9 @@
   margin: 10px;
   font-size: 20px;
   text-align: center;
+}
+
+.alcohol_name {
+  text-decoration: none;
+  text-decoration-line: none;
 }
