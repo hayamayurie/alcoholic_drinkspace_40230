@@ -2,6 +2,7 @@ class AlcoholsController < ApplicationController
   before_action :set_categories, only: [:new,]
   
   def index
+    @alcohols=Alcohol.all
   end
 
   def new

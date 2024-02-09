@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: space-between;
-  width: 1366px;
+  width: 1365px;
   height: 60px;
   padding: 20px 60px 15px 60px;
   background-color: #f6efdb
@@ -23,7 +23,7 @@
   border: solid 1px;
   font-size: 30px;
   text-decoration: none;
-  background-color: mintcream;
+  background-color: whitesmoke;
   color: slategray;
   border-radius: 10px;
   font-family: Georgia;
@@ -75,10 +75,10 @@ font-size: 50px;
   padding: 10px;
   margin: 30px 230px;
   background-color: white;
+  border: solid 1px slategray;
 }
 
 .start-btn {
   text-decoration: none;
   color: slategray;
-  
 }

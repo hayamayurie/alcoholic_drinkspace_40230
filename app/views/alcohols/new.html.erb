@@ -1,7 +1,7 @@
 
 <%= form_with(model: @alcohol, local: true) do |f| %>
   <div>画像の投稿</div>
-    <%= f.file_field :hoge, id:"item-image" %>
+    <%= f.file_field :image, id:"item-image" %>
     <div>
   <%= f.label :category_id, 'お酒の種類'%>
   <% @categories.each do |category| %>
