@@ -26,7 +26,16 @@ class AlcoholsController < ApplicationController
     @alcohol=Alcohol.find(params[:id])
   end
 
-  
+  def update
+    @alcohol = Alcohol.find(params[:id])
+    
+    if @alcohol.update(alcohol_params)
+      redirect_to alcohols_path(@alcohol)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
 
   private
   def alcohol_params
