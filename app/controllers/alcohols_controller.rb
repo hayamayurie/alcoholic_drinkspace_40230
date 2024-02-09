@@ -10,8 +10,15 @@ class AlcoholsController < ApplicationController
   end
 
   def create
-    @alcohol=Alcohol.create(alcohol_params)
-    redirect_to alcohols_path
+    if @alcohol=Alcohol.create(alcohol_params)
+      redirect_to alcohols_path
+    else
+      render :new, status: :unprocessable_entity
+   end
+  end
+
+  def show
+    @alcohol=Alcohol.find(params[:id])
   end
 
   private

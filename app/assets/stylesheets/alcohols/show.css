@@ -1,0 +1,47 @@
+.show_info {
+  width: 1350px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.show_image {
+  width: 100%;
+  margin: 50px 50px 20px 50px;
+}
+
+.show_name {
+  font-size: 25px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  font-weight: bold; 
+}
+
+.show_memo {
+  padding: 30px;
+  margin: 0 300px 0 400px;
+  background-color: antiquewhite;
+  
+  border-radius: 10px;
+}
+
+.show_btn {
+  display: flex;
+  text-align: center;
+  margin: 30px 500px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.edit {
+  padding: 20px 100px;
+  background-color:  whitesmoke;
+  border-radius: 10px;
+}
+.destory {
+  margin-left: 50px;
+  background-color:  whitesmoke;
+  padding: 20px 100px;
+  border-radius: 10px;
+}
