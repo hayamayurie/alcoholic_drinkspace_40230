@@ -30,12 +30,12 @@
         <div class ="list">
        <% @alcohols.each do |alcohol| %>
         <div class="product">
-           <%= link_to alcohol_path(alcohol) do %>
+           <%= link_to alcohol_path(alcohol),class:"contens_name" do %>
         <div class='item-img-content'>
           <%= image_tag alcohol.image.variant(resize: '300x250'), class: "message-image" if alcohol.image.attached? %></div>
           <div class='item-name'>
             <%= alcohol.alcohol_name %>
-            </div>
+             </div>
             <% end %>
             </div>
             <%end%>
