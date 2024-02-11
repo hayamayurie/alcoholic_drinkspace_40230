@@ -26,27 +26,36 @@
 }
 
 .product {
-  height: 300px;
+  height: 290px;
   width: 300px; /* 商品ボックスの幅 */
-  margin: 20px 10px; /* 商品ボックスのマージン */
+  margin: 20px 20px; /* 商品ボックスのマージン */
   padding: 10px; /* 商品ボックスのパディング */
-  background-color: whitesmoke;
   border-radius: 10px;
+  border:solid 8px cornsilk;
 }
 
 .item-img-content {
-  background-color: whitesmoke;
+
   text-align: center;
   height: 250px;
 }
 
 .item-name {
   margin: 10px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
 .alcohol_name {
   text-decoration: none;
   text-decoration-line: none;
+}
+
+.alcohol_name_tag {
+  text-decoration: none;
+}
+
+.contens_name {
+  text-decoration: none;
+  color: black;
 }
