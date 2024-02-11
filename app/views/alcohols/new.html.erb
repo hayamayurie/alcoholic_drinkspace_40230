@@ -19,7 +19,7 @@
     </header>
 <div class ="new_btn">
 <%= form_with(model: @alcohol, local: true) do |f| %>
- <%= render "error_messages", model: f.object  %>
+ <%= render "shared/error_messages", model: f.object  %>
 
     <div class="post_title_category">
   <%= f.label :category_id, 'お酒の種類'%></div>

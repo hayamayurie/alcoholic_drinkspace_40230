@@ -29,3 +29,7 @@ font-weight: bold;
 .image_title {
   padding-left: 110px;
 }
+
+.error-messages {
+  list-style: none;
+}

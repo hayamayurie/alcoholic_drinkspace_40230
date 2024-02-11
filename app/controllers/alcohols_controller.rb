@@ -1,5 +1,5 @@
 class AlcoholsController < ApplicationController
-  before_action :set_categories, only: [:new,:edit]
+  before_action :set_categories, only: [:new,:edit,:create]
   
   def index
     @alcohols=Alcohol.all
