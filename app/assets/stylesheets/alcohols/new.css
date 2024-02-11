@@ -32,4 +32,6 @@ font-weight: bold;
 
 .error-messages {
   list-style: none;
+  color: maroon;
+  margin-right: 40px;
 }
