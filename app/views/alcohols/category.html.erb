@@ -7,7 +7,9 @@
 <body>
   <header>
     <div class ="title">
-      <div class ="title-tag">alcohol record space</div>
+      <div class ="title-tag">
+        <%=link_to 'alcohol record space',alcohols_path, class: "title_name" %>
+      </div>
       <div class='nav'>
     <ul class='lists-right'>
       <li><%= link_to  current_user.nickname, class: "user-nickname" %></li>
@@ -20,12 +22,12 @@
     <body>
       <div class="main">
       <div class="side_bar">
-        <%= link_to 'ビール', '/categories/1', class:"wapper"%>
-        <div class="wapper">ワイン</div>
-        <div class="wapper">日本酒</div>
-        <div class="wapper">ウイスキー</div>
-        <div class="wapper">焼酎</div>
-        <div class="wapper">カクテル</div>
+        <%= link_to 'ビール', category_path(1), class:"wapper"%>
+        <%= link_to 'ワイン', category_path(2), class:"wapper"%>
+        <%= link_to '日本酒', category_path(3), class:"wapper"%>
+        <%= link_to 'ウイスキー', category_path(4), class:"wapper"%>
+        <%= link_to '焼酎', category_path(5), class:"wapper"%>
+        <%= link_to 'カクテル', category_path(6), class:"wapper"%>
         </div>
         <div class ="list">
        <% @alcohols.each do |alcohol| %>
