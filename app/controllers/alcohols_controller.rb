@@ -1,6 +1,6 @@
 class AlcoholsController < ApplicationController
-  before_action :set_categories, only: [:new,:edit,:create,:update]
-  
+  before_action :set_alcohols, only:[:edit, :update, :destroy]
+  before_action :set_categories, only: [:index, :new,:edit,:create,:update]
   def index
     @alcohols=Alcohol.all
   end
@@ -19,16 +19,13 @@ class AlcoholsController < ApplicationController
   end
 
   def show
-    @alcohol=Alcohol.find(params[:id])
+    @alcohol = Alcohol.find(params[:id])
   end
 
   def edit
-    @alcohol=Alcohol.find(params[:id])
   end
 
   def update
-    @alcohol = Alcohol.find(params[:id])
-    
     if @alcohol.update(alcohol_params)
       redirect_to alcohols_path(@alcohol)
     else
@@ -37,9 +34,13 @@ class AlcoholsController < ApplicationController
   end
 
   def destroy
-    @alcohol = Alcohol.find(params[:id])
     @alcohol.destroy
     redirect_to alcohols_path
+  end
+
+  def category
+    @category = Category.find(params[:id])
+    @alcohols = Alcohol.where(category_id: @category.id)
   end
 
 
@@ -47,6 +48,11 @@ class AlcoholsController < ApplicationController
   def alcohol_params
     params.require(:alcohol).permit(:alcohol_name, :memo, :category_id, :image).merge(user_id: current_user.id)
   end
+
+  def set_alcohols
+    @alcohol = Alcohol.find(params[:id])
+  end
+
 
   def set_categories
     @categories = Category.all

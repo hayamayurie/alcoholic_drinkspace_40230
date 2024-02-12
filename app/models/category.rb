@@ -8,5 +8,5 @@ class Category < ActiveHash::Base
     { id: 6, category: 'カクテル' },
   ]
   include ActiveHash::Associations
-  belongs_to :alcohol
+  has_many :alcohol
 end

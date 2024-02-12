@@ -28,15 +28,15 @@
 .product {
   height: 290px;
   width: 300px; /* 商品ボックスの幅 */
-  margin: 20px 20px; /* 商品ボックスのマージン */
+  margin: 20px; /* 商品ボックスのマージン */
   padding: 10px; /* 商品ボックスのパディング */
   border-radius: 10px;
   border:solid 8px cornsilk;
 }
 
 .item-img-content {
-
   text-align: center;
+  
   height: 250px;
 }
 
