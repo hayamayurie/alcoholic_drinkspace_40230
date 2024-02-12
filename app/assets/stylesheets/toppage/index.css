@@ -7,6 +7,11 @@
   background-color: #f6efdb;
 }
 
+.title_name {
+  text-decoration: none; 
+  color: slategrey;
+}
+
 .title-tag {
   font-size: 40px;
   font-family: Georgia;
