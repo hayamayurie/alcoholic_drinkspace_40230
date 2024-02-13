@@ -40,7 +40,7 @@ class AlcoholsController < ApplicationController
 
   def category
     @category = Category.find(params[:id])
-    @alcohols = Alcohol.where(category_id: @category.id)
+    @alcohols = current_user.alcohols.where(category_id: @category.id)
   end
 
 
