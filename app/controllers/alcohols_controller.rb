@@ -2,7 +2,7 @@ class AlcoholsController < ApplicationController
   before_action :set_alcohols, only:[:edit, :update, :destroy]
   before_action :set_categories, only: [:index, :new,:edit,:create,:update]
   def index
-    @alcohols=Alcohol.all
+    @alcohols=current_user.alcohols
   end
 
   def new
