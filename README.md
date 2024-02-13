@@ -32,12 +32,21 @@ https://alcohol-40230.onrender.com
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/5bfe5224179fa559441dcb6c7dd16244.png)](https://gyazo.com/5bfe5224179fa559441dcb6c7dd16244)
 
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/2a2d4df0fbe2dc5462f68d0c2f960c21.png)](https://gyazo.com/2a2d4df0fbe2dc5462f68d0c2f960c21)
+
 # 開発環境
-・フロントエンド  
-・バックエンド  
-・インフラ  
-・テスト  
-・テキストエディタ  
-・タスク管理
+### フロントエンド
+・HTML  
+・CSS  
+・JavaScript  
+### バックエンド
+・Ruby  
+・Rails  
+
+### インフラ
+・Render
+  
+
 
 
