@@ -14,7 +14,7 @@ document.addEventListener('turbo:load', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('turbo:load', function() {
   const categoryButtons = document.querySelectorAll('.wapper');
 
   categoryButtons.forEach(function(categoryButton) {
@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
