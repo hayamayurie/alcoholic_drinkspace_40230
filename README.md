@@ -26,9 +26,9 @@ https://alcohol-40230.onrender.com
 美味しいお酒に出会っても思い出したいタイミングで忘れてしまい思い出せなかったり、写真は撮ったが写真ホルダーで埋れてしまって見つけられない事がよくありました。好きな物をコレクションとして残しながら必要な時に探せるアプリがあれば便利だなと考え作成を行いました。
 
 ## 実装の予定の機能
-・検索の機能の追加  
-・JavaScriptを使用しフロントの装飾  
-・本番環境をAWSに変えたい
+・JavaScriptを使用しフロントの装飾(2/16実装予定)  
+・検索の機能の追加(2/20実装予定)  
+・本番環境をAWSに移行(2/26実装予定)  
 
 ## データベース設計
 [![Image from Gyazo](https://i.gyazo.com/5bfe5224179fa559441dcb6c7dd16244.png)](https://gyazo.com/5bfe5224179fa559441dcb6c7dd16244)
@@ -43,7 +43,7 @@ https://alcohol-40230.onrender.com
 ・JavaScript  
 ### バックエンド
 ・Ruby  
-・Rails  
+・Ruby on Rails  
 
 ### インフラ
 ・Render
