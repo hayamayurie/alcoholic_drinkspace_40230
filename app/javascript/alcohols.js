@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('turbo:load', function() {
   const postButton = document.getElementById('postButton');
 
   postButton.addEventListener('mouseover', function() {
