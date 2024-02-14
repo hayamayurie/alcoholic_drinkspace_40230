@@ -73,17 +73,18 @@ font-size: 50px;
 }
 
 .service-btn {
-  font-size: 40px;
-  text-align: center;
-  border-radius: 10px;
-  font-family: Georgia;
-  padding: 10px;
-  margin: 30px 230px;
-  background-color: white;
-  border: solid 1px slategray;
+  margin: 30px;
 }
 
 .start-btn {
   text-decoration: none;
   color: slategray;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Georgia;
+  padding: 10px 20px; 
+  margin: 30px 200px;
+  background-color: white;
+  border: solid 1px slategray;
 }
