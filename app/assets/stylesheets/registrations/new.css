@@ -6,7 +6,6 @@
 
 .login_link {
   text-decoration: none;
-  color: maroon;
-  font-weight: bold;
   margin-top: 30px; 
+  color: maroon;
 }
