@@ -30,3 +30,17 @@ document.addEventListener('turbo:load', function() {
   });
 });
 
+document.addEventListener('turbo:load', function() {
+  const postButton = document.getElementById('StartButton');
+
+  postButton.addEventListener('mouseover', function() {
+    postButton.style.backgroundColor = '#f6efdb';
+    postButton.style.color = 'dimgray'; 
+  });
+
+  postButton.addEventListener('mouseout', function() {
+    postButton.style.backgroundColor = '';
+    postButton.style.color = '';
+  });
+});
+
