@@ -84,3 +84,17 @@ document.addEventListener('turbo:load', function() {
     });
   });
 });
+
+document.addEventListener('turbo:load', function() {
+  const categoryButtons = document.querySelectorAll('.title_name');
+
+  categoryButtons.forEach(function(categoryButton) {
+    categoryButton.addEventListener('mouseover', function() {
+      categoryButton.style.color = 'darkgray';
+    });
+
+    categoryButton.addEventListener('mouseout', function() {
+      categoryButton.style.color = ''
+    });
+  });
+});
