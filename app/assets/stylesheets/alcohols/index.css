@@ -6,12 +6,12 @@
 }
 
 .wapper {
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
-  padding: 30px 40px ;
+  padding: 30px 50px ;
   text-decoration: none;
   color: slategray;
-  font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN"; font-weight: bold;
+  font-family: "游ゴシック体","YuGothic";
 }
 
 .main {

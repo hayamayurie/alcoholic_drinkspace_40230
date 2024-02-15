@@ -70,3 +70,17 @@ document.addEventListener('turbo:load', function() {
     });
   });
 });
+
+document.addEventListener('turbo:load', function() {
+  const categoryButtons = document.querySelectorAll('.product');
+
+  categoryButtons.forEach(function(categoryButton) {
+    categoryButton.addEventListener('mouseover', function() {
+      categoryButton.style.backgroundColor = 'whitesmoke';
+    });
+
+    categoryButton.addEventListener('mouseout', function() {
+      categoryButton.style.backgroundColor = ''
+    });
+  });
+});

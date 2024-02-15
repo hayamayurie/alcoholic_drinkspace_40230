@@ -40,11 +40,12 @@
 }
 
 .logout {
+  font-size: 18px;
   padding: 0 20px;
   text-decoration-line: none;
   text-decoration: none;
   color: slategray;
-  ;
+  font-family: "游ゴシック体","YuGothic";
 }
 .imag {
   display: flex;
@@ -65,13 +66,13 @@
 
 .alcohol-text__main {
 font-size: 50px;
-font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN"; font-weight: bold;
+font-family: "游ゴシック体","YuGothic";
 }
 
 .hero-text__sub {
   font-size: 20px;
   text-align: center;
-  font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN";
+  font-family: "游ゴシック体","YuGothic";
 }
 
 .service-btn {
