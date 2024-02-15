@@ -35,19 +35,18 @@
 }
 
 .edit {
-  padding: 20px 100px;
-  background-color:  whitesmoke;
-  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .destory {
   margin-left: 50px;
-  background-color:  whitesmoke;
-  padding: 20px 100px;
-  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .link-class {
   text-decoration: none !important;
   color: black;
+  background-color:  whitesmoke;
+  padding: 20px 100px;
+  border-radius: 10px;
 }
