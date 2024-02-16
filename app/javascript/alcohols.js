@@ -2,7 +2,7 @@ document.addEventListener('turbo:load', function() {
   const postButton = document.getElementById('postButton');
 
   postButton.addEventListener('mouseover', function() {
-    postButton.style.backgroundColor = 'cornsilk';
+    postButton.style.backgroundColor = 'white';
     postButton.style.color = 'dimgray'; 
   });
 
@@ -34,7 +34,7 @@ document.addEventListener('turbo:load', function() {
   const postButton = document.getElementById('StartButton');
 
   postButton.addEventListener('mouseover', function() {
-    postButton.style.backgroundColor = '#f6efdb';
+    postButton.style.backgroundColor = 'white';
     postButton.style.color = 'dimgray'; 
   });
 
