@@ -43,6 +43,10 @@ class AlcoholsController < ApplicationController
     @alcohols = current_user.alcohols.where(category_id: @category.id)
   end
 
+  def search
+    @keyword = params[:keyword]
+    @results = Alcohol.search(@keyword)
+  end
 
   private
   def alcohol_params
