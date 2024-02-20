@@ -67,3 +67,8 @@
   text-decoration: none;
   color: black;
 }
+
+.keyword {
+  display: flex;
+  padding: 30px 30px ;
+}

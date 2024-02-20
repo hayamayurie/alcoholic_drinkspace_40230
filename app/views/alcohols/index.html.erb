@@ -21,10 +21,12 @@
     <body>
       <div class="main">
       <div class="side_bar">
-        <%= form_tag(search_alcohols_path, method: :get) do %>
-  <%= text_field_tag :keyword, params[:keyword], placeholder: '検索キーワード' %>
-  <%= submit_tag '検索' %>
-<% end %>
+        <div class ="keyword">
+      <%= form_tag(search_alcohols_path, method: :get) do %>
+        <%= text_field_tag :keyword, params[:keyword], placeholder: '検索キーワード' %>
+        <%= submit_tag '検索' %>
+      <% end %>
+      </div>
         <%= link_to 'ビール', category_path(1), class:"wapper",id:'CategoryButton'%>
         <%= link_to 'ワイン', category_path(2), class:"wapper",id:'CategoryButton'%>
         <%= link_to '日本酒', category_path(3), class:"wapper",id:'CategoryButton'%>
