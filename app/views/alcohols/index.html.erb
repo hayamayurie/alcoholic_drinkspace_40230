@@ -24,7 +24,7 @@
         <div class ="keyword">
       <%= form_tag(search_alcohols_path, method: :get) do %>
         <%= text_field_tag :keyword, params[:keyword], placeholder: '検索キーワード' %>
-        <%= submit_tag '検索' %>
+        <%= submit_tag '検索',class:"submit" %>
       <% end %>
       </div>
         <%= link_to 'ビール', category_path(1), class:"wapper",id:'CategoryButton'%>

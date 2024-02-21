@@ -70,5 +70,10 @@
 
 .keyword {
   display: flex;
-  padding: 30px 30px ;
+  padding: 30px;
+}
+
+.submit {
+  margin-top: 5px;
+  margin-left: 135px;
 }
