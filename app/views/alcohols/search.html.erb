@@ -1,0 +1,12 @@
+<h1>検索結果</h1>
+
+<% if @results.present? %>
+  <ul>
+    <% @results.each do |result| %>
+      <li><%= result.alcohol_name %></li>
+      <!-- 他の表示項目も追加するか、適宜変更してください -->
+    <% end %>
+  </ul>
+<% else %>
+  <p>検索結果がありません。</p>
+<% end %>
