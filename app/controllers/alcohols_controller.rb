@@ -46,7 +46,7 @@ class AlcoholsController < ApplicationController
   def search
     @keyword = params[:keyword]
     @results = Alcohol.search(@keyword)
-    render :search
+    return render :search
   end
 
   private

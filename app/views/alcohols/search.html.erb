@@ -1,12 +1,21 @@
 <h1>検索結果</h1>
 
+<%= form_tag(search_alcohols_path, method: :get) do %>
+  <%= text_field_tag :keyword, params[:keyword], placeholder: '検索キーワード' %>
+  <%= submit_tag '検索', class: "submit" %>
+<% end %>
+
 <% if @results.present? %>
+  <h2>検索結果一覧</h2>
+
   <ul>
     <% @results.each do |result| %>
       <li><%= result.alcohol_name %></li>
-      <!-- 他の表示項目も追加するか、適宜変更してください -->
+      <!-- 他の検索結果の表示項目を追加 -->
     <% end %>
   </ul>
 <% else %>
   <p>検索結果がありません。</p>
 <% end %>
+
+<%= link_to '戻る', alcohols_path %>
