@@ -38,7 +38,7 @@ https://alcohol-40230.onrender.com
 ・JavaScript  
 ### バックエンド
 ・Ruby  
-・Ruby on Rails  
+・Ruby on Rails(フレームワーク)  
 
 ### インフラ
 ・Render
